@@ -1,0 +1,13 @@
+{
+	"assets": {
+		"tile_sheet": {"type": "image", "source": "img/tile_sheet.png"}, 
+		"player_spritesheet": {"type": "image", "source": "img/player_spritesheet.png"}
+	}, 
+    "groups": [
+        "player",
+        "enemies",
+        "items",
+        "goals",
+        "hud"
+    ]
+}

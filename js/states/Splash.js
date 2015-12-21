@@ -3,6 +3,7 @@ var Splash = function(){};
 Splash.prototype = {
   init: function()
   {
+    console.log("Splash init");
     this.spr_logo = game.make.sprite(game.world.centerX, 200, 'logo');
     this.txt_progress = game.make.text(game.world.centerX, 380, 'Loading...', {fill: 'white'});
     this.spr_loadingBar = game.make.sprite(game.world.centerX-(360/2), 420, 'loadingbar');
@@ -12,6 +13,7 @@ Splash.prototype = {
 
   preload: function()
   {
+    console.log("Splash preload");
     game.add.sprite(0, 0, 'bg_splash');
     game.add.existing(this.spr_logo);
     game.add.existing(this.spr_loadingBar);

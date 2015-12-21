@@ -18,7 +18,7 @@ Game.prototype = {
 
   loadScripts: function()
   {
-    //
+    game.load.script('LevelGenerator', 'js/utils/LevelGenerator.js');
   },
 
   loadFonts: function()
