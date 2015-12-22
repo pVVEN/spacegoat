@@ -1,5 +1,6 @@
 var Splash = function(){};
 
+//LOADS ASSETS FOR THE MENU
 Splash.prototype = {
   init: function()
   {
