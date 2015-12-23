@@ -1,4 +1,5 @@
 //See also: http://perplexingtech.weebly.com/game-dev-blog/a-random-dungeon-generator-for-phaserjs
+//And: http://phaser.io/news/2015/11/bomberman-tutorial-part2
 
 //Constants
 var TILE_SIZE = 32;
@@ -7,9 +8,10 @@ var HEIGHT_RATIO = 0.45;
 var ITERATIONS = 4;
 var map = undefined;
 
-var LevelGenerator = function (levelWidth, levelHeight){
-	console.log("LevelGenerator.js - constructor");
-	this.levelWidth = levelWidth;
+var LevelGenerator = function (levelWidth, levelHeight)
+{
+	"use strict";
+    this.levelWidth = levelWidth;
 	this.levelHeight = levelHeight;
 	this.tilesPerRow = 0;
 	this.tilesPerColumn = 0;
@@ -227,7 +229,8 @@ LevelGenerator.prototype = {
 
 var Tree = function(leaf)
 {
-	this.leaf = leaf;
+	"use strict";
+    this.leaf = leaf;
 	this.lChild = undefined;
 	this.rChild = undefined;
 };
@@ -290,7 +293,8 @@ Tree.prototype = {
 
 var RoomContainer = function(x, y, w, h)
 {
-	//Room.call(this, x, y, w, h);
+	"use strict";
+    //Room.call(this, x, y, w, h);
 	this.x = x;
 	this.y = y;
 	this.w = w;
@@ -431,7 +435,8 @@ RoomContainer.prototype = {
 
 var Room = function(x, y, w, h)
 {
-	this.x = x;
+	"use strict";
+    this.x = x;
 	this.y = y;
 	this.w = w;
 	this.h = h;
